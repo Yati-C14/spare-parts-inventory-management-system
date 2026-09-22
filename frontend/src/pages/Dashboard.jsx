@@ -1,5 +1,7 @@
 import {useEffect, useState} from 'react';
 import {getProducts,getSuppliers,getCategories,getTransactions} from '../services/api';
+import './Dashboard.css';
+
 
 function Dashboard() {
     const [products, setProducts] = useState([]);
