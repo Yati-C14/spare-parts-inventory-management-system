@@ -1,0 +1,143 @@
+.transactions-page {
+  padding: 28px;
+  min-height: 100%;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.transactions-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--text-h, #1e293b);
+}
+
+.transactions-header p {
+  margin: 6px 0 0;
+  color: var(--text, #64748b);
+  font-size: 14px;
+}
+
+.transactions-count {
+  min-width: 125px;
+  padding: 10px 18px;
+  text-align: center;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.transactions-count span {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.transactions-count small {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.transactions-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+.transactions-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.transactions-table th {
+  padding: 15px 18px;
+  text-align: left;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.transactions-table td {
+  padding: 16px 18px;
+  color: #475569;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.transactions-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.transactions-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.transaction-id {
+  color: #64748b !important;
+  font-weight: 600;
+}
+
+.transaction-type-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.transaction-product {
+  color: #1e293b !important;
+  font-weight: 600;
+}
+
+.transaction-quantity {
+  font-weight: 700;
+  color: #1e293b !important;
+}
+
+.transaction-notes {
+  max-width: 240px;
+  color: #64748b !important;
+}
+
+.empty-transactions {
+  padding: 40px !important;
+  text-align: center;
+  color: #64748b !important;
+}
+
+@media (max-width: 768px) {
+  .transactions-page {
+    padding: 18px;
+  }
+
+  .transactions-header {
+    align-items: flex-start;
+  }
+
+  .transactions-header h1 {
+    font-size: 24px;
+  }
+}
