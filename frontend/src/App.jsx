@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Sidebar from "./components/Sidebar.jsx";
-import Dashboard from "./pages/Dashboard.jsx";
-import Inventory from "./pages/Inventory.jsx";
-import Suppliers from "./pages/Suppliers.jsx";
-import Categories from "./pages/Categories.jsx";
-import Transactions from "./Transactions.jsx";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard";
+import Inventory from "./pages/Inventory";
+import Suppliers from "./pages/Suppliers";
+import Categories from "./pages/Categories";
+import Transactions from "./Transactions";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
         <Sidebar />
 
         <main className="main-content">
+          <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/inventory" element={<Inventory />} />

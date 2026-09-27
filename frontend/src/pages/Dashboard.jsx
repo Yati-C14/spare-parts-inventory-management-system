@@ -44,8 +44,8 @@ function Dashboard() {
 
       <div className="dashboard-header">
         <div>
-          <h1>Inventory Dashboard</h1>
-          <p>Overview of your spare parts inventory</p>
+          <h1 className="dashboard-title">Spare Parts Inventory Management System</h1>
+          <p className="dashboard-subtitle">Overview of your spare parts inventory</p>
         </div>
       </div>
 
